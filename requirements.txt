@@ -1,0 +1,30 @@
+# --- Core PDF Processing ---
+pdfplumber==0.11.4         # Best for structured text & table extraction
+PyMuPDF==1.24.10           # Fast text extraction & coordinate access
+camelot-py[cv]==0.11.0     # Accurate table detection in text-based PDFs
+tabula-py==2.10.0          # Secondary table extraction tool (Java required)
+
+# --- OCR + Image Processing ---
+pytesseract==0.3.13        # Wrapper for Tesseract OCR engine
+opencv-python==4.10.0.84   # Image preprocessing (deskew, crop, detect lines)
+Pillow==11.0.0             # Image I/O and basic manipulation
+easyocr==1.7.1             # Backup OCR for complex scans (optional GPU)
+scikit-image==0.24.0       # Advanced filters/segmentation (optional)
+
+# --- Data Handling / Storage ---
+pandas==2.2.3              # Data wrangling and tabular normalization
+SQLAlchemy==2.0.36         # ORM for structured persistence
+polars==1.12.0             # Optional: faster DataFrame engine for large jobs
+
+# --- API / Orchestration (Optional) ---
+fastapi==0.115.0           # REST API interface for extraction microservice
+uvicorn[standard]==0.30.6  # ASGI server for FastAPI
+
+# --- Task Queue (Optional, if batching PDFs) ---
+rq==1.15.1                 # Lightweight Redis-backed job queue
+redis==5.1.0               # Client for Redis task queue
+
+# --- Dev / Utility ---
+python-dotenv==1.0.1       # Environment variable management
+tqdm==4.66.5               # Progress bars for batch jobs
+loguru==0.7.2              # Clean, structured logging
