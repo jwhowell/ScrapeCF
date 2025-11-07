@@ -9,6 +9,7 @@ dependencies:
   - pillow=11.0.0
   - scikit-image=0.24.0
   - pandas=2.2.3
+  - matplotlib=
   - pip
   - pip:
       # fallback for any packages not available via conda
