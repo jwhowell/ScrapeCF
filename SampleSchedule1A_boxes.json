@@ -1,0 +1,15 @@
+{
+  "image": "SampleSchedule1A.png",
+  "shape": [
+    1194,
+    916
+  ],
+  "boxes": [
+    [
+      630,
+      244,
+      107,
+      41
+    ]
+  ]
+}

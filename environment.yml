@@ -1,0 +1,16 @@
+name: scrapecf
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pytesseract=0.3.13
+  - opencv=4.10.0
+  - pillow=11.0.0
+  - scikit-image=0.24.0
+  - pandas=2.2.3
+  - pip
+  - pip:
+      # fallback for any packages not available via conda
+      # (all these should be available via conda-forge, but you can keep pip for safety)
+      # pytesseract==0.3.13
