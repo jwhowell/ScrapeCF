@@ -10,8 +10,8 @@ dependencies:
   - scikit-image=0.24.0
   - pandas=2.2.3
   - matplotlib=
+  - requests
+  - bs4
   - pip
   - pip:
-      # fallback for any packages not available via conda
-      # (all these should be available via conda-forge, but you can keep pip for safety)
-      # pytesseract==0.3.13
+      pdfplumber
